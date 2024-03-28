@@ -1,0 +1,19 @@
+{
+    "version": "0.2",
+    "configurations": [
+        {
+            "name": "Debug SFML",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "build",
+            "miDebuggerPath": "C:\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\gdb.exe"
+        }
+    ]
+}

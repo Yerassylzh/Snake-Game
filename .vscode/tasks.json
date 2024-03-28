@@ -1,0 +1,21 @@
+{
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "C:\\winlibs-i686-posix-dwarf-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\\mingw32\\bin\\mingw32-make.exe -f C:\\Users\\MARK\\Desktop\\Development\\Projects\\SFML\\Snake\\MakeFile", // Replace with your build command (e.g., make, cmake --build .)
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
