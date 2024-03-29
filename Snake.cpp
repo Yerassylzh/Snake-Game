@@ -66,8 +66,7 @@ Snake::Snake(int width, int height, int snakeW, int snakeH) : m_width(width), m_
     srand(static_cast<uint32_t>(time(nullptr)));
     m_snakePositions.push_back({m_width / 2, m_height / 2});
     m_snakePositionsSet.insert({m_width / 2, m_height / 2});
-    m_applePosition = genApplePosition();
-
+    
     // Setting up brick wall position
     if (width > 70 || height > 70)
         throw std::invalid_argument("Too big game window!");
@@ -81,6 +80,8 @@ Snake::Snake(int width, int height, int snakeW, int snakeH) : m_width(width), m_
     for (int y = height * 3 / 4; y < height; ++y)
         m_notAllowed.insert({0, y}), m_notAllowed.insert({width - 1, y});
 
+    m_applePosition = genApplePosition();
+    
     // Setting up brick sprite
     if (!m_brickTexture.loadFromFile("Brick.png"))
         throw std::invalid_argument("Cannot find <Brick.png> in directory!");
